@@ -172,6 +172,7 @@ func main() {
 
 	// parse servers
 	tokens := strings.Split(serverList, ",")
+
 	for _, tok := range tokens {
 		serverUrl, err := url.Parse(tok)
 		if err != nil {
